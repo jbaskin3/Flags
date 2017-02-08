@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Switching Flags</title> 
+<style>
+
+#red-stripe {
+  position: absolute;
+  top: 0;
+  left: 70%;
+  width: 40%;
+  height: 100%;
+  background: red;
+}
+
+#white-stripe {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  width: 40%;
+  height: 100%;
+  background: white;
+}
+
+#flag2 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: navy;
+}
+
+.column {
+  width: 20%;
+  height: 100%;
+  float: left;
+}
+
+.yellow2 {
+  background: yellow;
+}
+
+.red {
+  background: red;
+}
+
+.black {
+  background: black;
+}
+
+.navy {
+  background: navy;
+}
+
+.yellow1 {
+  background: yellow;
+}
+
+#rect-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 60%;
+  background: green;
+}
+
+.stripe {
+  width: 100%;
+  height: 20%;
+}
+
+#rect-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40%;
+  background: red;
+}
+
+#flag1 {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: blue;
+}
+
+@media screen and (max-width: 700px) {
+  #flag1 {
+    display: none;
+  }
+  #flag2 {
+    display: block;
+  }
+}
+
+    
+</style>
+</head>
+<body>
+    
+   <div id="flag1">
+  <!-- PUT ALL THE OTHER STUFF INSIDE HERE -->
+  <div id="rect-top">
+    <div class="stripe yellow1"></div>
+    <div class="stripe navy"></div>
+    <div class="stripe black"></div>
+    <div class="stripe red"></div>
+    <div class="stripe yellow2"></div>
+  </div>
+
+<div id="rect-bottom">
+    <div class="column yellow1"></div>
+    <div class="column navy"></div>
+    <div class="column black"></div>
+    <div class="column red"></div>
+    <div class="column yellow2"></div>
+  </div>
+  </div>
+  
+  <div id="flag2">
+    <!-- PUT ALL THE OTHER STUFF INSIDE HERE -->
+    <div id="white-stripe"></div>
+    <div id="red-stripe"></div>
+  </div>
+
+ 
+</body>
+    
+    
+    
+</html>
